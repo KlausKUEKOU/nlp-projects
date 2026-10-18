@@ -10,7 +10,7 @@ with Hugging Face models, and unsupervised clustering of short texts.
 | [`03_survey_responses_clustering`](notebooks/03_survey_responses_clustering.ipynb) | What themes come out of open answers about remote work? (French) | spaCy preprocessing, TF-IDF, K-Means, word clouds |
 | [`04_whatsapp_forum_analysis`](notebooks/04_whatsapp_forum_analysis.ipynb) | What does a 2,772-message student WhatsApp group talk about, and is it friendly? | Parsing and cleaning chat exports, emoji handling, word frequencies, multilingual BERT sentiment (1 to 5 stars) |
 
-## Highlight: tokenization benchmark
+## Tokenization benchmark
 
 Amazon Fine Food Reviews (first 10,000 reviews, 3 sentiment classes):
 
@@ -22,8 +22,8 @@ Amazon Fine Food Reviews (first 10,000 reviews, 3 sentiment classes):
 | Whitespace | 0.8105 | **0.8039** | 0.8105 | **0.8066** |
 | Sentences | 0.7670 | 0.7540 | 0.7670 | 0.6768 |
 
-Sentence-level tokenization collapses toward the majority class; the four finer-grained methods are
-within one point of each other. Confusion matrices: [`results/results.txt`](results/results.txt).
+With sentence tokenization the model predicts mostly the majority class. The four other methods
+are within one point of each other. Confusion matrices: [`results/results.txt`](results/results.txt).
 Full rendered report: [`reports/tokenization_benchmark_report.html`](reports/tokenization_benchmark_report.html).
 
 ## Run it

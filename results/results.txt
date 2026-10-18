@@ -1,0 +1,50 @@
+
+--- Méthode : Caractères ---
+accuracy: 0.8125
+precision: 0.8016
+recall: 0.8125
+f1_score: 0.8061
+Matrice de confusion :
+[[ 166   38  101]
+ [  26   54   87]
+ [  70   53 1405]]
+
+--- Méthode : Mot par mot ---
+accuracy: 0.8110
+precision: 0.8003
+recall: 0.8110
+f1_score: 0.8040
+Matrice de confusion :
+[[ 157   45  103]
+ [  22   54   91]
+ [  62   55 1411]]
+
+--- Méthode : Sous-mots (BERT) ---
+accuracy: 0.8145
+precision: 0.7956
+recall: 0.8145
+f1_score: 0.8015
+Matrice de confusion :
+[[ 145   41  119]
+ [  30   46   91]
+ [  48   42 1438]]
+
+--- Méthode : Phrases ---
+accuracy: 0.7670
+precision: 0.7540
+recall: 0.7670
+f1_score: 0.6768
+Matrice de confusion :
+[[  13    0  292]
+ [   2    2  163]
+ [   9    0 1519]]
+
+--- Méthode : Espaces ---
+accuracy: 0.8105
+precision: 0.8039
+recall: 0.8105
+f1_score: 0.8066
+Matrice de confusion :
+[[ 171   37   97]
+ [  28   56   83]
+ [  67   67 1394]]
